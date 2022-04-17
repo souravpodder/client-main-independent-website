@@ -1,0 +1,22 @@
+[
+  { "id": 1,
+    "name" : "arrange long distance tours",
+    "description": "Long Distance tours are always difficult for the travel lovers. You can hire me to do these arrangements of a long distance tour anytime. I will make all the arrangements and set specific day for your travel when you can have the best experience.",
+    "price" : 120,
+    "img": "https://i.ibb.co/m5VW9Zn/service1.png"
+  },
+  { "id": 2,
+    "name" : "Organize Recreational Activities",
+    "description": "Recreational activities are part and parcel for a successful tour. I can organize these activities according to your choice. You just have to give me a list of your most love activities. I will arrange them in the lowest possible cost.",
+    "price" : 140,
+    "img": "https://i.ibb.co/FHPCLXv/service2.png"
+  },
+  { "id": 3,
+    "name" : "Mountain Tour Guide",
+    "description": "If you are a mountain climbing lover, then i am the perfect person to be hired by you. I have already taken part in almost 100 mountain climb tours. You will have a greater and joyful time with me. I will also make the arrangements of all the required accessories of mountain climb",
+    "price" : 180,
+    "img": "https://i.ibb.co/52hCdfw/service3.png"
+  }
+
+
+]

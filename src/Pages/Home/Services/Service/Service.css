@@ -1,0 +1,32 @@
+.service{
+ 
+  border-radius: 13px;
+  background-color: rgb(232, 255, 249);
+  color: rgb(44, 4, 99);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.service-image{
+  border-radius: 13px;
+}
+.service-content{
+  padding: 20px;
+}
+
+.service-description{
+  font-size: 20px;
+}
+
+.checkout-btn{
+  padding: 20px 60px;
+  border: none;
+  background-color:rgb(255, 133, 89);
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.checkout-btn:hover{
+  background-color: rgb(252, 101, 46);;
+}
+
