@@ -9,6 +9,7 @@ import Checkout from './Pages/Checkout/Checkout';
 import Blog from './Pages/Blog/Blog';
 import Header from './Pages/Shared/Header/Header';
 import Footer from './Pages/Shared/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/blogs' element={<Blog />}></Route>
+        <Route path='*' element={<NotFound />}></Route>
 
       </Routes>
       <Footer />
