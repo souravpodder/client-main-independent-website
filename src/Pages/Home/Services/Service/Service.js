@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Service.css';
 
 const Service = ({ service }) => {
   const { id, name, price, img, description } = service;
+  const navigate = useNavigate();
+  // navigate to the dynamic route 
+  const navigateToCheckout = (id) => {
+    navigate(`/checkout/${id}`);
+  }
   return (
     <div className='col-md-6 col-lg-4'>
       <div className='h-100 service'>
@@ -11,7 +17,7 @@ const Service = ({ service }) => {
           <h5>Service: {name}</h5>
           <p className='fw-bold'>Price: ${price}</p>
           <p><small className='service-description'>{description}</small></p>
-          <button className='checkout-btn d-block mx-auto'>Go to Checkout</button>
+          <button onClick={() => navigateToCheckout(id)} className='checkout-btn d-block mx-auto'>Go to Checkout</button>
         </div>
 
       </div>

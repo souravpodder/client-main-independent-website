@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 
@@ -11,6 +11,7 @@ import SocialLogin from './SocialLogin/SocialLogin';
 const Login = () => {
 
   const navigate = useNavigate();
+  const location = useLocation();
   const [
     signInWithEmailAndPassword,
     user,
@@ -18,15 +19,19 @@ const Login = () => {
     error,
   ] = useSignInWithEmailAndPassword(auth);
 
+  let from = location.state?.from?.pathname || "/";
+
   let errorElement;
   if (error) {
     errorElement = <p className='text-center text-danger fw-bold'>Error: {error && error.message}</p>
   }
 
+
   if (user) {
-    console.log(user);
-    navigate('/');
+    navigate(from, { replace: true });
   }
+
+
 
   const handleLogin = event => {
     event.preventDefault();

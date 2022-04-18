@@ -1,11 +1,13 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
 
 const Signup = () => {
+
+  const navigate = useNavigate();
 
   const [
     createUserWithEmailAndPassword,
@@ -19,6 +21,11 @@ const Signup = () => {
     errorElement = <p className='text-center text-danger'>Error: {error && error.message}</p>
   }
 
+  if (user) {
+    navigate('/');
+  }
+
+  // get the email and password and create user 
   const handleSignUp = event => {
     event.preventDefault();
     const email = event.target.email.value;
