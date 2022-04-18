@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../../images/logo.png';
+import './Header.css';
 
 const Header = () => {
 
@@ -16,7 +17,7 @@ const Header = () => {
   }
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
+      <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark" >
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img src={logo} alt="" />

@@ -3,10 +3,11 @@ import { Carousel } from 'react-bootstrap';
 import banner1 from '../../../images/Banner/Banner1.png';
 import banner2 from '../../../images/Banner/Banner2.png';
 import banner3 from '../../../images/Banner/Banner3.png';
+import './Banner.css';
 
 const Banner = () => {
   return (
-    <div>
+    <div className='banner'>
       <Carousel>
         <Carousel.Item interval={2000}>
           <img
@@ -14,9 +15,12 @@ const Banner = () => {
             src={banner2}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>Get The Most Effective Guides</h3>
-            <p>As I have so many previous experiences you will get the most effective guides from me</p>
+          <Carousel.Caption className='slider-content'>
+            <div >
+              <h5 className='slider-header'>Get The Most Effective Guides</h5>
+              <p className='slider-text'>As I have so many previous experiences you will get the most effective guides from me</p>
+            </div>
+
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -26,9 +30,12 @@ const Banner = () => {
             src={banner3}
             alt="Second slide"
           />
-          <Carousel.Caption>
-            <h3>Make Your journy safe</h3>
-            <p>I will guide you to the places which are safe for you. so no worry about your safety</p>
+          <Carousel.Caption className='slider-content'>
+            <div>
+              <h5 className='slider-header'>Make Your journy safe</h5>
+              <p className='slider-text'>I will guide you to the places which are safe for you. so no worry about your safety</p>
+            </div>
+
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
@@ -37,9 +44,11 @@ const Banner = () => {
             src={banner1}
             alt="Third slide"
           />
-          <Carousel.Caption>
-            <h3>Rivers Trip</h3>
-            <p>Jorney in the most Beautiful Rivers and enjoy the sceneries</p>
+          <Carousel.Caption className='slider-content'>
+            <div>
+              <h5 className='slider-header'>Rivers Trip</h5>
+              <p className='slider-text'>Jorney in the most Beautiful Rivers and enjoy the sceneries</p>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
 
