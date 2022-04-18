@@ -1,0 +1,17 @@
+.side-line{
+  height: 2px;
+  width: 40%;
+  background-color: rgb(103, 4, 4);
+}
+
+.login-google-btn{
+  background-color: rgba(0, 199, 46, 0.7);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 20px 100px;
+  border: none;
+  border-radius: 50px;
+  display: block;
+  margin: 10px auto;
+}

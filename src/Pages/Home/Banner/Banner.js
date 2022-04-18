@@ -8,39 +8,42 @@ const Banner = () => {
   return (
     <div>
       <Carousel>
+        <Carousel.Item interval={2000}>
+          <img
+            className="d-block w-100"
+            src={banner2}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>Get The Most Effective Guides</h3>
+            <p>As I have so many previous experiences you will get the most effective guides from me</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={2000}>
+          <img
+            className="d-block w-100"
+            src={banner3}
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3>Make Your journy safe</h3>
+            <p>I will guide you to the places which are safe for you. so no worry about your safety</p>
+          </Carousel.Caption>
+        </Carousel.Item>
         <Carousel.Item interval={1000}>
           <img
             className="d-block w-100"
             src={banner1}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={500}>
-          <img
-            className="d-block w-100"
-            src={banner2}
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={banner3}
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>Rivers Trip</h3>
+            <p>Jorney in the most Beautiful Rivers and enjoy the sceneries</p>
           </Carousel.Caption>
         </Carousel.Item>
+
+
       </Carousel>
     </div>
   );
