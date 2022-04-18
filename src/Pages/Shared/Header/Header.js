@@ -15,12 +15,13 @@ const Header = () => {
   const handleSignOut = () => {
     signOut(auth);
   }
+
   return (
     <>
       <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark" >
         <Container>
-          <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="" />
+          <Navbar.Brand className='fw-bold' as={Link} to="/">
+            <span>Travellers Point</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

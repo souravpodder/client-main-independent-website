@@ -88,7 +88,7 @@ const Login = () => {
 
       {errorElement}
 
-      <p>New to website? <Link to="/signup" className='text-primary fw-bold text-decoration-none'>Register Here!</Link></p>
+      <p>New to Travellers Point? <Link to="/signup" className='text-primary fw-bold text-decoration-none'>Register Here!</Link></p>
 
       <p>Forgot Password? <button onClick={handleResetPassword} className='btn btn-link text-primary fw-bold text-decoration-none'>Reset Password</button></p>
 

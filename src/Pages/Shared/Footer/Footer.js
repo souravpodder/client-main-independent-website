@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='footer h-100'>
       <div>
-        Copyright, &copy; {new Date().getFullYear()}, All Rights Reserved
+        Copyright, &copy; {new Date().getFullYear()}, All Rights Reserved travellers point
       </div>
       <div>
         <FaFacebook className='social-icons' />
